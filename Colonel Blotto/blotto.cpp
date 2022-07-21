@@ -84,13 +84,15 @@ class CBTrainer {
                 
                 std::cout.precision(4);
                 std::cout << std::fixed;
-                if ((i+1) % 100 == 0) {
+                if ((i+1) % 1000 == 0) {
                     std::cout<<"iteration: "<<i+1<<std::endl;
                     std::cout<<std::setw(15)<<"P"<<std::setw(20)<<"Strategy"<<std::endl;
                     std::cout<<"Player 0"<<std::endl;
                     player0.print_average_strategy(i+1);
                     std::cout<<"Player 1"<<std::endl;
                     player1.print_average_strategy(i+1);
+                    std::cout<<std::endl;
+                    std::cout<<std::endl;
                 }    
             }
         }
