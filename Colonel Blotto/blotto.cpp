@@ -114,8 +114,8 @@ std::random_device CBTrainer::seed;
 std::mt19937_64 CBTrainer::engine(CBTrainer::seed());
 
 int main() {
-    CBTrainer player0(3, 8);
-    CBTrainer player1(3, 8);
+    CBTrainer player0(5, 3);
+    CBTrainer player1(5, 3);
 
     CBTrainer::train(10000, player0, player1);
     return 0;
