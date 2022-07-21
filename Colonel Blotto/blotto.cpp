@@ -116,7 +116,9 @@ std::random_device CBTrainer::seed;
 std::mt19937_64 CBTrainer::engine(CBTrainer::seed());
 
 int main() {
+    // 5 soldiers allocated to 3 battlefields 
     CBTrainer player0(5, 3);
+    // 5 soldiers allocated to 3 battlefields 
     CBTrainer player1(5, 3);
 
     CBTrainer::train(10000, player0, player1);
